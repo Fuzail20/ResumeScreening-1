@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  </script>
+        <title></title>
+        
+    </head>
+    <body>
+        <p>Hello everyone Hi Fuzail</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+       
+        <script>
+            var A=[1,2,3,4,5];
+            document.getElementById("demo").innerHTML=A.map(function(value){
+                return value*10;
+            });
+
+            document.getElementById("demo1").innerHTML=$.map(A,function(value){
+                return value*10;
+            });
+            const B=[1,1,2,3,,4,4,5,6,7,7,7,8,9]
+            document.getElementById("demo2").innerHTML=$.unique(B);
+
+            $("#demo").hide();
+        </script>
+    </body>
+</html>
